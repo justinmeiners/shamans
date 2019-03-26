@@ -119,6 +119,9 @@ If you have any feedback, requests for future platform, or questions about game 
 
 ## Programming References
 
+* [Adventures In Game Development](https://www.youtube.com/playlist?list=PLR_PJH88vEgfjlY9QsWaeMiXz62Qws7Pb)
+* [dEngine](http://fabiensanglard.net/dEngineSourceCodeRelease/index.php)
+
 * [3D Kingdoms](http://www.3dkingdoms.com/)
 * [Fabien Sanglard](http://fabiensanglard.net/)
 * [FlipCode](http://flipcode.com/)
@@ -143,6 +146,7 @@ If you have any feedback, requests for future platform, or questions about game 
 * [Creating Models in Quake 4](https://web.archive.org/web/20160321000657/https://www.iddevnet.com/quake4/ArtReference_CreatingModels)
 * [Creating Modular Environments in UDK](http://web.archive.org/web/20130814040659/http://www.thiagoklafke.com/modularenvironments.html)
 * [Creating Pixel Art](http://pixeljoint.com/forum/forum_posts.asp?TID=11299)
+* [Modular Level and Component Design](https://api.unrealengine.com/udk/Three/rsrc/Three/ModularLevelDesign/ModularLevelDesign.pdf)
 * [Skyrim's Modular Level Design](http://blog.joelburgess.com/2013/04/skyrims-modular-level-design-gdc-2013.html)
 * [So You Want To Be A Pixel Artist?](http://mirror.motherhamster.org/tsugumo/default.html)
 * [Ten Top Tips of Texturing](https://web.archive.org/web/20120512014055/http://www.cgsociety.org/index.php/CGSFeatures/CGSFeatureSpecial/the_top_ten_tips_of_texturing)
