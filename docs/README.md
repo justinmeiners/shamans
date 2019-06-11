@@ -119,6 +119,11 @@ If you have any feedback, requests for future platform, or questions about game 
 
 ## References
 
+This section contains references to papers and articles
+which heavily influenced the game.
+Many of these old PDFs are included in the repo as they
+are not available elsewhere.
+
 **AI**
 
 * [The Illusion of Intelligence (PDF)](papers/ai/the_illusion_of_intelligence.pdf)
