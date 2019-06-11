@@ -1,0 +1,146 @@
+3D Point and Click Engine 
+By: Justin Meiners (April 2014)
+
+- PCs
+- static 3D scenes
+- pre baked high quality scene lighting 
+- entity IO system
+- nav mesh collision and navigation
+- switches, doors, movers, etc 
+- All action on nav mesh 
+
+Map 
+- built from custom models and instances models
+- compiled into a single world mesh
+- lit and light mapped in blender 
+- automotive Lightmap UV unwrap
+- light sample nodes used for dynamic character lighting
+
+How are instanced models materiel?
+- materials only determine lighting, which is baked
+- therefore all materials are blender only except texture info
+- all static meshes need to be textured on atlases
+- a set of similar objects would all use the same atlas
+- a single atlas is applied to each world mesh
+
+1. Select only map objects In blender.
+2. Combine
+3. Automatic light map UV 
+4. Bake lighting
+
+Will there be merge issues because the model
+
+World
+MapMesh : "jungle_3.map"
+LightMesh : "jungle_3.light"
+NavMesh : "jungle_3.nav"
+Entities : "jungle_3.entities"
+LightMap : "jungle_3.tga"
+AtlasType : "atlas0"
+WeatherType : "winter"
+
+WorldDirectory
+"jungle_3" : "worlds/jungle_3/jungle_3.world"
+
+AtlasDirectory
+"atlas0" : "atlases/atlas0.tex"
+
+EntityDirectory
+"StaticMesh" : SpawnStaticMesh()
+"EnemySpawner" : SpawnEnemySpawner()
+
+EntityList (not all fields are read for every entity type, unused fields are saved but ignored)
+- position
+- rotation
+- bounding box
+- properties
+- I/O connections
+- name
+
+Light Sample Nodes
+- position
+- needs to sample light direction,
+- cube maps or sphere maps
+
+
+Asset Types:
+- Static Mesh
+- Textures
+- Materials
+- NavMesh 
+- Skeletal Meshes
+- Skeletal Animations
+- World
+- LightInfo
+- Sounds
+- Music
+- Scripts
+- Fonts
+
+diverse and interdependent asset types require assets to be loadable and un loadable from file paths
+
+Persistent assets 
+- sound effects
+- player model, textures, materials, and animations
+- creature models, textures, materials, and animations
+
+Temporary Assets
+- current level mesh
+- current level texture
+- current level light map
+- current level nav mesh
+- current music
+
+Block Entities
+- touch triggers (blk_trigger)
+- targets (blk_target)
+- switches (blk_switch)
+- doors (blk_door)
+
+Point Entities
+- movers (ent_mover)
+- spawners (ent_spawner)
+- script (ent_script)
+
+
+Game
+- renderer
+- soundMixer
+- GUI
+- entities
+
+Game_Init() 
+- prepare systems
+- load essential assets
+
+Game_Shutdown()
+
+Game_PausePlay()
+Game_ResumePlay()
+
+Game_LoadWorld(int worldID)
+
+Game_PlaySound(int soundID)
+
+Game_SpawnEntity(int entityType, Vec3 position,..)
+Game_KillEntity(int entityID)
+
+Game_PlayScriptEvent(int eventID)
+
+
+World
+- textureID
+- light map
+- static mesh (2 UV layers)
+- nav mesh
+- light sources
+- script file
+   * contains all events for this world
+- name
+- entities
+   * tags
+   * inputs 
+   * outputs
+
+
+
