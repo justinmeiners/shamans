@@ -121,7 +121,6 @@ If you have any feedback, requests for future platform, or questions about game 
 
 * [Adventures In Game Development](https://www.youtube.com/playlist?list=PLR_PJH88vEgfjlY9QsWaeMiXz62Qws7Pb)
 * [dEngine](http://fabiensanglard.net/dEngineSourceCodeRelease/index.php)
-
 * [3D Kingdoms](http://www.3dkingdoms.com/)
 * [Fabien Sanglard](http://fabiensanglard.net/)
 * [FlipCode](http://flipcode.com/)
