@@ -2,8 +2,8 @@
 
 ## Structure
 
-- `assets/` contains source files for game data (PSDs, blender, etc).
-- `data/` game data such as models, textures, etc.
+- `assets/` source files for game data (PSDs, blender, etc).
+- `data/` built game data such as models, textures, etc.
 - `docs/` a postmordem about the project.
 - `source/engine/` portable game and engine code.
 - `source/platform/` API or platform-specific modules.
