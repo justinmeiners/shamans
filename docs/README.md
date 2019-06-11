@@ -1,5 +1,5 @@
-Shamans History
--------------------------
+Shamans
+================
 
 This article is a history of how I made Shamans and some of the lessons I learned in development. Shamans is currently in testing. The source code will be released on my Github, but the game data is not open source (similar to id tech). 
 
