@@ -3,105 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <title>An Adventure in Pre-Rendered Backgrounds</title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
+<style>
+/* http://jasonm23.github.io/markdown-css-themes/ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+    color:#444;
+        font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+            font-size:12px;
+                line-height:1.5em;
+                    padding:1em;
+                        margin:auto;
+                            max-width:42em;
+                                background:#fefefe;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+    margin:1em 0;
+}
+
+img{
+    max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+        color:#111;
+            line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+    color:#666666;
+        margin:0;
+            padding-left: 3em;
+                border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+pre, code, kbd, samp { color: #000; font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 0.98em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+    body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+    body{font-size:16px;}
+}
+
+@media print {
+      * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+        body{font-size:12pt; max-width:100%;}
+          a, a:visited { text-decoration: underline; }
+            hr { height: 1px; border:0; border-bottom:1px solid black; }
+              a[href]:after { content: " (" attr(href) ")"; }
+                abbr[title]:after { content: " (" attr(title) ")"; }
+                  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+                    pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+                      tr, img { page-break-inside: avoid; }
+                        img { max-width: 100% !important; }
+                          @page :left { margin: 15mm 20mm 15mm 10mm; }
+                            @page :right { margin: 15mm 10mm 15mm 20mm; }
+                              p, h2, h3 { orphans: 3; widows: 3; }
+                                h2, h3 { page-break-after: avoid; }
+}
+</style>
 </head>
 <body>
-<h2 id="shamanshistory">Shamans History</h2>
-<p>This article is a history of how I made Shamans and some of the lessons I learned in development. Shamans is currently in testing. The source code will be released on my Github, but the game data is not open source (similar to id tech). </p>
-<h3 id="enginesvsgames">Engines vs Games</h3>
+<h2 id="shamans-history">Shamans History</h2>
+<p>This article is a history of how I made Shamans and some of the lessons I learned in development. Shamans is currently in testing. The source code will be released on my Github, but the game data is not open source (similar to id tech).</p>
+<h3 id="engines-vs-games">Engines vs Games</h3>
 <p>Shamans is not my first 3D project. I have been involved in 3D graphics profesionally, and game development as a hobby for more than 5 years. But, in my attempts to make games in the past I always tried to craft the perfect game engine which I could then use to create a game. Each was a cleanly designed object framework, with enough generality to anticipate "any kind of game" I might want to make. Below are some screenshots from these early projects:</p>
 <p><img src="img/galaxy_forge_lg.jpg" alt="galaxy forge" /></p>
-<p><img src="img/galaxy_forge_sm.jpg" alt="" />](img/galaxy<em>forge</em>lg.jpg)
-<a href="img/old_character_lg.jpg"><img src="img/old_character_sm.jpg" alt="" /></a>
-<a href="img/world_c_lg.jpg"><img src="img/world_c_sm.jpg" alt="" /></a>
-<a href="img/space_ship_lg.jpg"><img src="img/space_ship_sm.jpg" alt="" /></a></p>
+<p><img src="img/galaxy_forge_sm.jpg" />](img/galaxy_forge_lg.jpg) <a href="img/old_character_lg.jpg"><img src="img/old_character_sm.jpg" /></a> <a href="img/world_c_lg.jpg"><img src="img/world_c_sm.jpg" /></a> <a href="img/space_ship_lg.jpg"><img src="img/space_ship_sm.jpg" /></a></p>
 <p>This is a common problem for programmers who just want to tinker with tech. In software systems this is known as the <a href="https://en.wikipedia.org/wiki/Turing_tarpit">Turing Tarpit</a> problem. Although making engines like this is a fun excercise, it doesn't lead to many finished games. Solving general problems is very difficult in the first place, but games are really design problems, and design is about choices. Without a particular game in mind, you cannot make any choices, or weigh any tradeoffs, or make any ontological commitments.</p>
 <p>A good example of this is Quake. In the Quake engine has two kinds of objects, entities (dynamic moving objects) and the game world (static world scenery). The fact that the game world is static allows it to be rendered very quickly, with detailed lighting and effects, which the entities don't have. This choice works very well for an indoor, first person shooter, but would be hopeless for a game that required destructible enviornments. Without knowing the kind of game they wanted, they would never have been able to make that choice.</p>
 <p>After learning great technical lessons from making engines I realized the most effective way to make a game is to build the engine around the game, instead of the other way around. Shamnas is a result of this philosophy. Every line of code I wrote was to get to the next game feature. This choice was reinforced by choosing C rather than C++. C++ encourages you to write everything as a generic abstraction. C allows you to write polymorphic abstractions when you need, but the default is writing concrete code for specific problems.</p>
-<h3 id="earlygame">Early Game</h3>
+<h3 id="early-game">Early Game</h3>
 <p>The original concept for Shamans looked very different from the final product. The game began as a 3D point and click adventure, in which players would experience a short story set within a castle. The technology which I built for this adventure concept lended itself to the design of the final game. Levels are built from "chunks" of 3D scenery with detailed precalculated lightmapping. As the camera moves around chunks offscreen are hidden from rendering. The gameplay for characters takes place upon an invisible navigation mesh which represents the playable area. This allows the game to render beautiful worlds that exist independant of the actual gameplay.</p>
-<p><img src="img/8_22_15_lg.jpg" alt="" /></p>
-<p><img src="img/9_24_15_lg.jpg" alt="" /></p>
-<p><img src="img/9_25_15_lg.jpg" alt="" /></p>
-<p><img src="img/10_7_15_lg.jpg" alt="" /></p>
+<p><img src="img/8_22_15_lg.jpg" /></p>
+<p><img src="img/9_24_15_lg.jpg" /></p>
+<p><img src="img/9_25_15_lg.jpg" /></p>
+<p><img src="img/10_7_15_lg.jpg" /></p>
 <p>Unfortuntaly, creating detailed 3D worlds and scripting story events turned out to be a too large of project for a one person team. After experimenting with several enviornments, I made the decision to design a game which would require less art content. The turn-based design ended up fitting well with the technology already built, and allowed for a slow paced game that is better suited for tablet play, and was less demanding in terms of art.</p>
-<p><img src="img/old_map1_lg.jpg" alt="" /></p>
-<p><img src="img/old_map2_lg.jpg" alt="" /></p>
+<p><img src="img/old_map1_lg.jpg" /></p>
+<p><img src="img/old_map2_lg.jpg" /></p>
 <h3 id="levels">Levels</h3>
 <p>Creating the art for the levels was still an enourmous amount of work for one programmer. After several attempts of modeling levels from hand I realized I had to use a more effecient approach. The task was mitigated by constructing a set of modular art pieces which are put together to form the levels. <a href="http://www.gamasutra.com/view/feature/130885/creating_modular_game_art_for_fast_.php">(A common practice in the industry.)</a> A collection of carefully crafted pieces, such as walls, floors, etc, are modeled in a grid system, and snap together like a lego kit. The modular approach also uses memory very effeciently. The entire kit for the game shares a single 2048x2048 texture created from photographs and several hand painted pieces. (All the source photos were taken by me.)</p>
-<p><img src="img/6_10_16_lg.jpg" alt="" /></p>
-<p><img src="img/kit_lg.jpg" alt="" /></p>
-<p><img src="img/kit_map_sm.jpg" alt="" /></p>
-<p><img src="img/shader_prototype_lg.jpg" alt="" /></p>
-<h3 id="charactersanimation">Characters &amp; Animation</h3>
+<p><img src="img/6_10_16_lg.jpg" /></p>
+<p><img src="img/kit_lg.jpg" /></p>
+<p><img src="img/kit_map_sm.jpg" /></p>
+<p><img src="img/shader_prototype_lg.jpg" /></p>
+<h3 id="characters--animation">Characters &amp; Animation</h3>
 <p>I started on the character models early in the game. Creating the characters was one of the most artistically challenging part of the game. Although a profesional artist will scoff at my work, I was able to exceed my own personal expectations, and get the quality and look I wanted. The game contains 5 unique characters, each with their own model, skeleton, texture and several animations. Each character was designed to have a similar "look and feel" so they cohere together in the same world.</p>
-<p><img src="img/early_characters_lg.jpg" alt="early 3d model game characters" />
-<img src="img/witch_modeling_lg.jpg" alt="witch 3d model" />
-<img src="img/wolf_modeling_lg.jpg" alt="wolf 3d model" />
-<img src="img/7_7_16_lg.jpg" alt="" /></p>
+<p><img src="img/early_characters_lg.jpg" alt="early 3d model game characters" /> <img src="img/witch_modeling_lg.jpg" alt="witch 3d model" /> <img src="img/wolf_modeling_lg.jpg" alt="wolf 3d model" /> <img src="img/7_7_16_lg.jpg" /></p>
 <p>All of the textures for the characters and items are hand painted. About half of the animations were created by hand, and the other half were created from reference footage. My sister (who is a dancer) helped me out by acting out many of the animation sequences. I used the footage of her acting out movements for rotoscoping.</p>
-<p><img src="img/rotoscoping.gif" alt="" /></p>
-<p>The skeletal animation format began as a modified <a href="http://tfc.duke.free.fr/coding/md5-specs-en.html">MD5 file format</a>, but evolved to an entirely unique format. Like MD5, skeletons are stored with mesh information in a "skel mesh" file. Animation sequences store rotation information as arrays of quaternions, and are stored in separate file from the mesh. </p>
+<p><img src="img/rotoscoping.gif" /></p>
+<p>The skeletal animation format began as a modified <a href="http://tfc.duke.free.fr/coding/md5-specs-en.html">MD5 file format</a>, but evolved to an entirely unique format. Like MD5, skeletons are stored with mesh information in a "skel mesh" file. Animation sequences store rotation information as arrays of quaternions, and are stored in separate file from the mesh.</p>
 <p>Initially the skeletal animation process was written in C for the CPU, but after initial tests on the iPad, the process for transforming the skin by the skeleton performed very poorly. But, the inherently parallel problem was a perfect fit for the GPU. The skin transformation is now calculated in a vertex shader.</p>
-<p><a href="img/10_6_15_lg.jpg"><img src="10_6_15_sm.jpg" alt="" /></a>
-<a href="img/5_11_16_lg.jpg"><img src="5_11_16_sm.jpg" alt="" /></a>
-<a href="img/5_7_16_lg.jpg"><img src="5_7_16_sm.jpg" alt="" /></a></p>
-<h3 id="tuningoptimization">Tuning &amp; Optimization</h3>
-<p>The ability to measure performance and make adjustments to fit hardwre, such as the GPU skinning process, is one of the key advantage of focusing on a game rather than an engine. With a game engine I couldn't confidently make such adjustments without rectifying how it would affect each platform and potential game genre. </p>
-<p><img src="img/tuning_session_lg.jpg" alt="" /></p>
-<p>Tailoring the program to the hardware is especially important for mobile devices. From projects in the past I became familiar with the strengths and weaknesses of PowerVR SGX and Apple A7+ GPUs, and was able to maximize the hardwares capabilities. The game is very efficient in its usage of draw calls, data formats, and pixel shader complexity. Every iPad since the iPad 2 should run at 60fps. </p>
+<p><a href="img/10_6_15_lg.jpg"><img src="10_6_15_sm.jpg" /></a> <a href="img/5_11_16_lg.jpg"><img src="5_11_16_sm.jpg" /></a> <a href="img/5_7_16_lg.jpg"><img src="5_7_16_sm.jpg" /></a></p>
+<h3 id="tuning--optimization">Tuning &amp; Optimization</h3>
+<p>The ability to measure performance and make adjustments to fit hardwre, such as the GPU skinning process, is one of the key advantage of focusing on a game rather than an engine. With a game engine I couldn't confidently make such adjustments without rectifying how it would affect each platform and potential game genre.</p>
+<p><img src="img/tuning_session_lg.jpg" /></p>
+<p>Tailoring the program to the hardware is especially important for mobile devices. From projects in the past I became familiar with the strengths and weaknesses of PowerVR SGX and Apple A7+ GPUs, and was able to maximize the hardwares capabilities. The game is very efficient in its usage of draw calls, data formats, and pixel shader complexity. Every iPad since the iPad 2 should run at 60fps.</p>
 <p>I have learned that OpenGL does not meanswrite once run anywhere. Writing correct syntax and processes are the easiest part of graphics programming. 3D graphics have to be written and adapted for dissimilar graphics cards.</p>
 <p><img src="img/performance_graph.gif" alt="performance graph" /></p>
-<p><img src="img/mipmap1_lg.jpg" alt="" />
-<img src="img/mipmap2_lg.jpg" alt="" /></p>
-<h3 id="specialfeatures">Special Features</h3>
+<p><img src="img/mipmap1_lg.jpg" /> <img src="img/mipmap2_lg.jpg" /></p>
+<h3 id="special-features">Special Features</h3>
 <p>Early versions of the game used the fixed-function pipeline of legacy OpenGL for simplicity. One challenge that pushed me to finally move to programmable pipeline was the unit visiblity, or "fog of war" effect. I first attempted to render spheres into the stencil buffer which would be used as the visibility volume, but unfortuantly I could not create the effect I wanted.</p>
-<p><img src="img/stencil_buffer_lg.jpg" alt="stencil buffer effect" />
-<img src="img/visibility_prototype_lg.jpg" alt="visibility prototype" /></p>
-<p>The particle system is "stateless". Each effect is defined by a pure function of time, rather than iterative algorithms. These functions are built from primitive functions such as sin, cos, lerp, etc. This allows each particle to run entirely in parallel, and for the system to  run on the GPU. The image below is a function which I used for noise. Although it is not random, sampling at various points gives the appearance of randomness.</p>
+<p><img src="img/stencil_buffer_lg.jpg" alt="stencil buffer effect" /> <img src="img/visibility_prototype_lg.jpg" alt="visibility prototype" /></p>
+<p>The particle system is "stateless". Each effect is defined by a pure function of time, rather than iterative algorithms. These functions are built from primitive functions such as sin, cos, lerp, etc. This allows each particle to run entirely in parallel, and for the system to run on the GPU. The image below is a function which I used for noise. Although it is not random, sampling at various points gives the appearance of randomness.</p>
 <p><img src="img/random_function.gif" alt="random_function.gif" /></p>
-<p>The menu, overworld, and many UI images were created from offline renders from Blender. Offline rendering was a process I found very enjoyable and creative. Creating 3D art for the game is more of a techincal process; there are hard constraints, such as how the model is formatted, how the normals blend, the number of triangles, etc,  which require precise and careful work. Creating prerendered images allows almost total freedom in how art is created which was a nice break.</p>
+<p>The menu, overworld, and many UI images were created from offline renders from Blender. Offline rendering was a process I found very enjoyable and creative. Creating 3D art for the game is more of a techincal process; there are hard constraints, such as how the model is formatted, how the normals blend, the number of triangles, etc, which require precise and careful work. Creating prerendered images allows almost total freedom in how art is created which was a nice break.</p>
 <p><img src="img/mountain_sculpt_lg.jpg" alt="mountain blender sculpt" /></p>
 <h3 id="conclusion">Conclusion</h3>
-<p>The amount of work that goes into creating a 3D video game is massive. I strongly encourage hobby developers to pick as focused of a project as possible. Shamans is only a simple tablet game, with a few hours of content and several characters. It doesn't come close to the size and quality of big budget titles and sticks to familiar gameplay. However, I am still excited to finally release my own game, even if it is a simple one. </p>
+<p>The amount of work that goes into creating a 3D video game is massive. I strongly encourage hobby developers to pick as focused of a project as possible. Shamans is only a simple tablet game, with a few hours of content and several characters. It doesn't come close to the size and quality of big budget titles and sticks to familiar gameplay. However, I am still excited to finally release my own game, even if it is a simple one.</p>
 <p>I hope you enjoy it! The final screenshots below are a timeline of the games progression from start to finish.</p>
-<p><a href="img/5_14_16_lg.jpg"><img src="5_14_16_sm.jpg" alt="" /></a>
-<a href="img/6_15_16_lg.jpg"><img src="6_15_16_sm.jpg" alt="" /></a>
-<a href="img/6_24_16_lg.jpg"><img src="6_24_16_sm.jpg" alt="" /></a>
-<a href="img/7_15_16_lg.jpg"><img src="7_15_16_sm.jpg" alt="" /></a></p>
-<p><a href="img/8_14_16_lg.jpg"><img src="8_14_16_sm.jpg" alt="" /></a>
-<a href="img/9_15_16_lg.jpg"><img src="9_15_16_sm.jpg" alt="" /></a></p>
+<p><a href="img/5_14_16_lg.jpg"><img src="5_14_16_sm.jpg" /></a> <a href="img/6_15_16_lg.jpg"><img src="6_15_16_sm.jpg" /></a> <a href="img/6_24_16_lg.jpg"><img src="6_24_16_sm.jpg" /></a> <a href="img/7_15_16_lg.jpg"><img src="7_15_16_sm.jpg" /></a></p>
+<p><a href="img/8_14_16_lg.jpg"><img src="8_14_16_sm.jpg" /></a> <a href="img/9_15_16_lg.jpg"><img src="9_15_16_sm.jpg" /></a></p>
 <p>If you have any feedback, requests for future platform, or questions about game development, please contact me.</p>
-<h2 id="programmingreferences">Programming References</h2>
+<h2 id="references">References</h2>
+<p><strong>AI</strong></p>
 <ul>
-<li><a href="http://www.3dkingdoms.com/">3D Kingdoms</a></li>
-<li><a href="http://fabiensanglard.net/">Fabien Sanglard</a></li>
-<li><a href="http://flipcode.com/">FlipCode</a></li>
-<li><a href="http://advsys.net/ken/">Ken Silverman</a></li>
-<li><a href="http://www.paulsprojects.net/">Paul's Projects</a></li>
-<li><a href="http://nothings.org/">Sean Barrett</a></li>
-<li><a href="http://learnopengl.com/">Learn OpenGL</a></li>
-<li><a href="https://paroj.github.io/gltut/">Learning Modern 3D Graphics Programming</a></li>
-<li><a href="http://nehe.gamedev.net/">NeHe</a></li>
-<li><a href="http://www.bluesnews.com/abrash/">Ramblings in Realtime</a></li>
-<li><a href="http://udn.epicgames.com/Three/Lightmass.html">Unreal Engine 3 - Lightmass</a></li>
-<li><a href="http://developer.valvesoftware.com/">Valve's Developer Site</a></li>
-<li><a href="http://www.videotutorialsrock.com/">Video Tutorials Rock</a></li>
-<li><a href="http://www.richardlord.net/blog/ecs/what-is-an-entity-framework.html">What is An Entity System</a></li>
+<li><a href="papers/ai/the_illusion_of_intelligence.pdf">The Illusion of Intelligence (PDF)</a></li>
+<li><a href="papers/ai/quake_3_arena_bot.pdf">The Quake 3 Arena Bot (PDF)</a></li>
 </ul>
-<h2 id="artreferences">Art References</h2>
+<p><strong>Art/Design</strong></p>
 <ul>
-<li><a href="http://www.manufato.com/?p=902">Brief Considerations About Materials</a></li>
+<li><a href="https://web.archive.org/web/20150205184627/http://www.manufato.com/?p=902">Brief Considerations About Materials</a></li>
+<li><a href="papers/art/bungie_map_design.pdf">Bungie Map Design (PDF)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Color_temperature">Color Temperature</a></li>
 <li><a href="http://www.techmind.org/colour/coltemp.html">Colour Temperature</a></li>
+<li><a href="papers/art/half_life_design.pdf">Half Life's Design Process (PDF)</a></li>
 <li><a href="https://developer.valvesoftware.com/wiki/Intermediate_Lighting#Lighting_psychology">Intermediate Lighting - Lighting Psychology</a></li>
+<li><a href="papers/art/intro_to_3d_modeling.pdf">Introduction to Low-Polygon 3D Modeling for Games (PDF)</a></li>
 <li><a href="https://web.archive.org/web/20160321000657/https://www.iddevnet.com/quake4/ArtReference_CreatingModels">Creating Models in Quake 4</a></li>
 <li><a href="http://web.archive.org/web/20130814040659/http://www.thiagoklafke.com/modularenvironments.html">Creating Modular Environments in UDK</a></li>
-<li><a href="http://pixeljoint.com/forum/forum_posts.asp?TID=11299">Creating Pixel Art</a></li>
+<li><a href="https://api.unrealengine.com/udk/Three/rsrc/Three/ModularLevelDesign/ModularLevelDesign.pdf">Modular Level and Component Design (PDF)</a></li>
 <li><a href="http://blog.joelburgess.com/2013/04/skyrims-modular-level-design-gdc-2013.html">Skyrim's Modular Level Design</a></li>
-<li><a href="http://mirror.motherhamster.org/tsugumo/default.html">So You Want To Be A Pixel Artist?</a></li>
 <li><a href="https://web.archive.org/web/20120512014055/http://www.cgsociety.org/index.php/CGSFeatures/CGSFeatureSpecial/the_top_ten_tips_of_texturing">Ten Top Tips of Texturing</a></li>
-<li><a href="http://www.alice.org/bvw03/TAweb/LowPoly/">The Art of Low Polygons</a></li>
+<li><a href="http://web.archive.org/web/20081222192247/http://www.alice.org/bvw03/TAweb/LowPoly/">The Art of Low Polygons</a></li>
 <li><a href="https://web.archive.org/web/20151128154844/http://www.michaeldashow.com/tips_texturepainting.html">Texture Painting</a></li>
-</ul></body>
+</ul>
+<p><strong>Programming/Graphics</strong></p>
+<ul>
+<li><a href="http://nothings.org/gamedev/thief_rendering.html">The 3D Software Rendering Technology of Thief: The Dark Project</a></li>
+<li><a href="papers/graphics/art_and_tech_of_bioshock.pdf">The Art and Technology Behind Bioshock's Special Effects (PDF)</a></li>
+<li><a href="http://fabiensanglard.net/c/">To become a C God</a></li>
+<li><a href="papers/graphics/bringing_aaa_mobile.pdf">Brining AAA Graphics to Mobile Platforms (PDF)</a></li>
+<li><a href="http://fabiensanglard.net/dEngineSourceCodeRelease/index.php">dEngine</a></li>
+<li><a href="http://flipcode.com/">FlipCode</a></li>
+<li><a href="papers/graphics/texture_atlas.pdf">Improving Batching Using Texture Atlases (PDF)</a></li>
+<li><a href="http://advsys.net/ken/">Ken Silverman</a></li>
+<li><a href="http://www.paulsprojects.net/opengl/projects1.html">Paul's Projects</a></li>
+<li><a href="http://learnopengl.com/">Learn OpenGL</a></li>
+<li><a href="https://paroj.github.io/gltut/">Learning Modern 3D Graphics Programming</a></li>
+<li><a href="http://www.bluesnews.com/abrash/">Ramblings in Realtime</a></li>
+<li><a href="papers/graphics/shading_in_source.pdf">Shading in Valve's Source Engine</a></li>
+<li><a href="papers/graphics/texture_streaming.pdf">Texture Streaming</a></li>
+<li><a href="http://udn.epicgames.com/Three/Lightmass.html">Unreal Engine 3 - Lightmass</a></li>
+<li><a href="papers/graphics/opengl_texture_compression.pdf">Using Texture Compression in OpenGL</a></li>
+<li><a href="http://www.videotutorialsrock.com/">Video Tutorials Rock</a></li>
+</ul>
+<p><strong>Engine</strong></p>
+<ul>
+<li><a href="https://web.archive.org/web/20130329074328/http://www.3dkingdoms.com/">3D Kingdoms</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLR_PJH88vEgfjlY9QsWaeMiXz62Qws7Pb">Adventures In Game Development</a></li>
+<li><a href="papers/engine/bungie_tag_system.pdf">Bungie: Tag System (PDF)</a></li>
+<li><a href="papers/engine/bungie_content_management.pdf">Content Management for Halo 2 (PDF)</a></li>
+<li><a href="papers/engine/halo2_content.pdf">Content Management for Halo2 2 (alternate) (PDF)</a></li>
+<li><a href="papers/engine/guerilla_game_code.pdf">The Guerilla Guide to Game Code</a></li>
+<li><a href="papers/engine/haloengine.pdf">Halo Engine (PDF)</a></li>
+<li><a href="papers/engine/pitfalls_of_oop.pdf">Pitfalls of OOP (PDF)</a></li>
+<li><a href="papers/engine/the_tech_of_halo_2.pdf">The Technology of Halo 2 (PDF)</a></li>
+<li><a href="papers/engine/game_components.pdf">Theory and Practice of Game Object Component Architecture (PDF)</a></li>
+<li><a href="http://www.richardlord.net/blog/ecs/what-is-an-entity-framework.html">What is An Entity System</a></li>
+<li><a href="http://developer.valvesoftware.com/">Valve's Developer Site</a></li>
+</ul>
+<p><strong>Mobile</strong></p>
+<ul>
+<li><a href="papers/mobile/ue3_on_iphone.pdf">Bringing UE3 to Apple's iPhone Platform (PDF)</a></li>
+<li><a href="papers/mobile/de_re_vita.pdf">De Re PlayStation Vita (PDF)</a></li>
+<li><a href="papers/mobile/valve_cross_platform.pdf">How to Go from PC to Cross Platform Development Without Killing Your Studio (PDF)</a></li>
+</ul>
+</body>
 </html>

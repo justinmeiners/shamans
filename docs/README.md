@@ -117,39 +117,73 @@ I hope you enjoy it! The final screenshots below are a timeline of the games pro
 
 If you have any feedback, requests for future platform, or questions about game development, please contact me.
 
-## Programming References
+## References
 
-* [Adventures In Game Development](https://www.youtube.com/playlist?list=PLR_PJH88vEgfjlY9QsWaeMiXz62Qws7Pb)
-* [dEngine](http://fabiensanglard.net/dEngineSourceCodeRelease/index.php)
-* [3D Kingdoms](http://www.3dkingdoms.com/)
-* [Fabien Sanglard](http://fabiensanglard.net/)
-* [FlipCode](http://flipcode.com/)
-* [Ken Silverman](http://advsys.net/ken/)
-* [Paul's Projects](http://www.paulsprojects.net/)
-* [Sean Barrett](http://nothings.org/)
-* [Learn OpenGL](http://learnopengl.com/)
-* [Learning Modern 3D Graphics Programming](https://paroj.github.io/gltut/)
-* [NeHe](http://nehe.gamedev.net/)
-* [Ramblings in Realtime](http://www.bluesnews.com/abrash/)
-* [Unreal Engine 3 - Lightmass](http://udn.epicgames.com/Three/Lightmass.html)
-* [Valve's Developer Site](http://developer.valvesoftware.com/)
-* [Video Tutorials Rock](http://www.videotutorialsrock.com/)
-* [What is An Entity System](http://www.richardlord.net/blog/ecs/what-is-an-entity-framework.html)
+**AI**
 
-## Art References
+* [The Illusion of Intelligence (PDF)](papers/ai/the_illusion_of_intelligence.pdf)
+* [The Quake 3 Arena Bot (PDF)](papers/ai/quake_3_arena_bot.pdf)
 
-* [Brief Considerations About Materials](http://www.manufato.com/?p=902)
+
+**Art/Design**
+
+* [Brief Considerations About Materials](https://web.archive.org/web/20150205184627/http://www.manufato.com/?p=902)
+* [Bungie Map Design (PDF)](papers/art/bungie_map_design.pdf)
 * [Color Temperature](https://en.wikipedia.org/wiki/Color_temperature)
 * [Colour Temperature](http://www.techmind.org/colour/coltemp.html)
+* [Half Life's Design Process (PDF)](papers/art/half_life_design.pdf)
 * [Intermediate Lighting - Lighting Psychology](https://developer.valvesoftware.com/wiki/Intermediate_Lighting#Lighting_psychology)
+* [Introduction to Low-Polygon 3D Modeling for Games (PDF)](papers/art/intro_to_3d_modeling.pdf)
 * [Creating Models in Quake 4](https://web.archive.org/web/20160321000657/https://www.iddevnet.com/quake4/ArtReference_CreatingModels)
 * [Creating Modular Environments in UDK](http://web.archive.org/web/20130814040659/http://www.thiagoklafke.com/modularenvironments.html)
-* [Creating Pixel Art](http://pixeljoint.com/forum/forum_posts.asp?TID=11299)
-* [Modular Level and Component Design](https://api.unrealengine.com/udk/Three/rsrc/Three/ModularLevelDesign/ModularLevelDesign.pdf)
+* [Modular Level and Component Design (PDF)](https://api.unrealengine.com/udk/Three/rsrc/Three/ModularLevelDesign/ModularLevelDesign.pdf)
 * [Skyrim's Modular Level Design](http://blog.joelburgess.com/2013/04/skyrims-modular-level-design-gdc-2013.html)
-* [So You Want To Be A Pixel Artist?](http://mirror.motherhamster.org/tsugumo/default.html)
 * [Ten Top Tips of Texturing](https://web.archive.org/web/20120512014055/http://www.cgsociety.org/index.php/CGSFeatures/CGSFeatureSpecial/the_top_ten_tips_of_texturing)
 * [The Art of Low Polygons](http://web.archive.org/web/20081222192247/http://www.alice.org/bvw03/TAweb/LowPoly/)
 * [Texture Painting](https://web.archive.org/web/20151128154844/http://www.michaeldashow.com/tips_texturepainting.html)
+
+
+
+**Programming/Graphics**
+
+* [The 3D Software Rendering Technology of Thief: The Dark Project](http://nothings.org/gamedev/thief_rendering.html)
+* [The Art and Technology Behind Bioshock's Special Effects (PDF)](papers/graphics/art_and_tech_of_bioshock.pdf)
+* [To become a C God](http://fabiensanglard.net/c/)
+* [Brining AAA Graphics to Mobile Platforms (PDF)](papers/graphics/bringing_aaa_mobile.pdf)
+* [dEngine](http://fabiensanglard.net/dEngineSourceCodeRelease/index.php)
+* [FlipCode](http://flipcode.com/)
+* [Improving Batching Using Texture Atlases (PDF)](papers/graphics/texture_atlas.pdf)
+* [Ken Silverman](http://advsys.net/ken/)
+* [Paul's Projects](http://www.paulsprojects.net/opengl/projects1.html)
+* [Learn OpenGL](http://learnopengl.com/)
+* [Learning Modern 3D Graphics Programming](https://paroj.github.io/gltut/)
+* [Ramblings in Realtime](http://www.bluesnews.com/abrash/)
+* [Shading in Valve's Source Engine](papers/graphics/shading_in_source.pdf)
+* [Texture Streaming](papers/graphics/texture_streaming.pdf)
+* [Unreal Engine 3 - Lightmass](http://udn.epicgames.com/Three/Lightmass.html)
+* [Using Texture Compression in OpenGL](papers/graphics/opengl_texture_compression.pdf)
+* [Video Tutorials Rock](http://www.videotutorialsrock.com/)
+
+
+**Engine**
+
+* [3D Kingdoms](https://web.archive.org/web/20130329074328/http://www.3dkingdoms.com/)
+* [Adventures In Game Development](https://www.youtube.com/playlist?list=PLR_PJH88vEgfjlY9QsWaeMiXz62Qws7Pb)
+* [Bungie: Tag System (PDF)](papers/engine/bungie_tag_system.pdf)
+* [Content Management for Halo 2 (PDF)](papers/engine/bungie_content_management.pdf)
+* [Content Management for Halo2 2 (alternate) (PDF)](papers/engine/halo2_content.pdf)
+* [The Guerilla Guide to Game Code](papers/engine/guerilla_game_code.pdf)
+* [Halo Engine (PDF)](papers/engine/haloengine.pdf)
+* [Pitfalls of OOP (PDF)](papers/engine/pitfalls_of_oop.pdf)
+* [The Technology of Halo 2 (PDF)](papers/engine/the_tech_of_halo_2.pdf)
+* [Theory and Practice of Game Object Component Architecture (PDF)](papers/engine/game_components.pdf)
+* [What is An Entity System](http://www.richardlord.net/blog/ecs/what-is-an-entity-framework.html)
+* [Valve's Developer Site](http://developer.valvesoftware.com/)
+
+**Mobile**
+
+* [Bringing UE3 to Apple's iPhone Platform (PDF)](papers/mobile/ue3_on_iphone.pdf)
+* [De Re PlayStation Vita (PDF)](papers/mobile/de_re_vita.pdf)
+* [How to Go from PC to Cross Platform Development Without Killing Your Studio (PDF)](papers/mobile/valve_cross_platform.pdf)
 
 
