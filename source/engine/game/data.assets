@@ -1,0 +1,191 @@
+
+staticModel: MODEL_CHUNK0 NULL
+staticModel: MODEL_CHUNK1 NULL
+staticModel: MODEL_CHUNK2 NULL
+staticModel: MODEL_CHUNK3 NULL
+staticModel: MODEL_CHUNK4 NULL
+staticModel: MODEL_CHUNK5 NULL
+staticModel: MODEL_CHUNK6 NULL
+
+texture: TEX_CHUNK0 NULL
+texture: TEX_CHUNK1 NULL
+texture: TEX_CHUNK2 NULL
+texture: TEX_CHUNK3 NULL
+texture: TEX_CHUNK4 NULL
+texture: TEX_CHUNK5 NULL
+texture: TEX_CHUNK6 NULL
+
+texture: TEX_WORLD NULL
+texture: TEX_WORLD_SPEC NULL
+
+texture: TEX_GUI_FONT gui/font.png
+texture: TEX_GUI_SKIN gui/skin.pvr
+texture: TEX_GUI_ITEMS gui/items.pvr
+texture: TEX_GUI_CONTROLS gui/controls.png
+texture: TEX_PART effects/part.png
+
+staticModel: MODEL_SKULL props/skull.bmesh
+texture: TEX_SKULL props/skull.pvr
+staticModel: MODEL_HP_KIT props/hp_kit.mesh
+texture: TEX_HP_KIT props/hp_kit.pvr
+staticModel: MODEL_RANGE_KIT props/range_kit.mesh
+texture: TEX_RANGE_KIT props/range_kit.pvr
+staticModel: MODEL_DEFENSE_KIT props/defense_kit.mesh
+texture: TEX_DEFENSE_KIT props/defense_kit.pvr
+staticModel: MODEL_MG_BULLET props/mg_bullet.bmesh
+texture: TEX_MG_BULLET props/mg_bullet.pvr
+staticModel: MODEL_CANNON_BULLET props/cannon_bullet.bmesh
+texture: TEX_CANNON_BULLET props/cannon_bullet.pvr
+staticModel: MODEL_CANNON props/cannon.bmesh
+texture: TEX_CANNON props/cannon.pvr
+staticModel: MODEL_MG props/mg.bmesh
+texture: TEX_MG props/mg.pvr
+staticModel: MODEL_MAGIC_BALL props/magic_ball.bmesh
+texture: TEX_MAGIC_BALL props/magic_ball.pvr
+staticModel: MODEL_AXE props/axe.bmesh
+texture: TEX_AXE props/axe.pvr
+staticModel: MODEL_MACHETE props/machete.bmesh
+texture: TEX_MACHETE props/machete.pvr
+staticModel: MODEL_SYRINGE props/syringe.bmesh
+texture: TEX_SYRINGE props/syringe.pvr
+staticModel: MODEL_REVOLVER props/revolver.bmesh
+texture: TEX_REVOLVER props/revolver.pvr
+texture: TEX_VAMP_BALL props/vamp_ball.pvr
+staticModel: MODEL_EGG_HEALER props/egg_healer.bmesh
+staticModel: MODEL_EGG_HEALER_DEAD props/egg_healer_dead.bmesh
+texture: TEX_EGG_HEALER props/egg_healer.pvr
+texture: TEX_EGG_HEALER_DEAD props/egg_healer_dead.pvr
+staticModel: MODEL_EYE_MINE_OPEN props/eye_mine_open.bmesh
+staticModel: MODEL_EYE_MINE_CLOSED props/eye_mine_closed.bmesh
+texture: TEX_EYE_MINE props/eye_mine.pvr
+
+skelModel: SKEL_SCIENTIST characters/scientist.skmesh
+texture: TEX_SCIENTIST characters/scientist.pvr
+skelAnim: ANIM_SCIENTIST_IDLE characters/scientist_idle.skanim
+skelAnim: ANIM_SCIENTIST_WALK characters/scientist_walk.skanim
+skelAnim: ANIM_SCIENTIST_PISTOL_IDLE characters/scientist_pistol_idle.skanim
+skelAnim: ANIM_SCIENTIST_PISTOL_WALK characters/scientist_pistol_walk.skanim
+skelAnim: ANIM_SCIENTIST_PISTOL_SHOOT characters/scientist_pistol_shoot.skanim
+skelAnim: ANIM_SCIENTIST_MG_SHOOT characters/scientist_mg_shoot.skanim
+
+skelAnim: ANIM_SCIENTIST_DIE characters/scientist_die.skanim
+skelAnim: ANIM_SCIENTIST_HURT characters/scientist_hurt.skanim
+skelAnim: ANIM_SCIENTIST_CANNON_SHOOT characters/scientist_cannon_shoot.skanim
+skelAnim: ANIM_SCIENTIST_AXE characters/scientist_axe.skanim
+skelAnim: ANIM_SCIENTIST_SYRINGE characters/scientist_syringe.skanim
+skelAnim: ANIM_SCIENTIST_MACHETE characters/scientist_machete.skanim
+
+skelModel: SKEL_PHANTOM characters/phantom.skmesh
+texture: TEX_PHANTOM characters/phantom.pvr
+skelAnim: ANIM_PHANTOM_IDLE characters/phantom_idle.skanim
+skelAnim: ANIM_PHANTOM_WALK characters/phantom_walk.skanim
+skelAnim: ANIM_PHANTOM_ATTACK characters/phantom_attack.skanim
+skelAnim: ANIM_PHANTOM_DIE characters/phantom_die.skanim
+skelAnim: ANIM_PHANTOM_HURT characters/phantom_hurt.skanim
+
+skelModel: SKEL_BAT characters/bat.skmesh
+texture: TEX_BAT characters/bat.pvr
+skelAnim: ANIM_BAT_IDLE characters/bat_idle.skanim
+skelAnim: ANIM_BAT_WALK characters/bat_walk.skanim
+skelAnim: ANIM_BAT_DIE characters/bat_die.skanim
+skelAnim: ANIM_BAT_HURT characters/bat_hurt.skanim
+skelAnim: ANIM_BAT_ATTACK characters/bat_attack.skanim
+
+texture: TEX_VAMP characters/vamp.pvr
+skelAnim: ANIM_BAT_THROW characters/bat_throw.skanim
+
+skelModel: SKEL_WOLF characters/wolf.skmesh
+texture: TEX_WOLF characters/wolf.pvr
+skelAnim: ANIM_WOLF_IDLE characters/wolf_idle.skanim
+skelAnim: ANIM_WOLF_WALK characters/wolf_walk.skanim
+skelAnim: ANIM_WOLF_ATTACK characters/wolf_attack.skanim
+skelAnim: ANIM_WOLF_HURT characters/wolf_hurt.skanim
+skelAnim: ANIM_WOLF_DIE characters/wolf_die.skanim
+
+skelModel: SKEL_WITCH characters/witch.skmesh
+texture: TEX_WITCH characters/witch.pvr
+skelAnim: ANIM_WITCH_IDLE characters/witch_idle.skanim
+skelAnim: ANIM_WITCH_WALK characters/witch_walk.skanim
+skelAnim: ANIM_WITCH_ATTACK characters/witch_attack.skanim
+skelAnim: ANIM_WITCH_TELEPORT characters/witch_teleport.skanim
+skelAnim: ANIM_WITCH_HURT characters/witch_hurt.skanim
+skelAnim: ANIM_WITCH_DIE characters/witch_die.skanim
+
+sound: SND_AMMO_PICKUP sounds/ammo_pickup.wav
+sound: SND_TOUCH_ON sounds/touch_on.wav
+sound: SND_TOUCH_OFF sounds/touch_off.wav
+sound: SND_STEP1 sounds/step1.wav
+sound: SND_STEP2 sounds/step2.wav
+sound: SND_AMBIENT sounds/ambient.wav
+sound: SND_MG_BULLET sounds/mg_bullet.wav
+sound: SND_MG_BULLET_HIT sounds/mg_hit.wav
+sound: SND_CANNON_BULLET sounds/cannon_bullet.ogg
+sound: SND_CANNON_HIT sounds/cannon_hit.ogg
+sound: SND_MAGIC_BALL sounds/magic_ball.wav
+sound: SND_MAGIC_HIT sounds/magic_hit.wav
+sound: SND_HIT_GLANCE sounds/hit_glance.ogg
+sound: SND_HEAL sounds/heal.ogg
+
+sound: SND_EYE_MINE_EXPLODE sounds/eye_mine_explode.wav
+sound: SND_EYE_MINE_OPEN sounds/eye_mine_open.ogg
+
+sound: SND_MIND_CONTROL sounds/mind_control.wav
+sound: SND_SYRINGE_HIT sounds/syringe_hit.wav
+sound: SND_MELEE sounds/melee.wav
+sound: SND_MELEE_HIT sounds/melee_hit.wav
+
+sound: SND_SCIENTIST_SELECT1 sounds/scientist_select1.ogg
+sound: SND_SCIENTIST_SELECT2 sounds/scientist_select2.ogg
+sound: SND_SCIENTIST_SELECT3 sounds/scientist_select3.ogg
+sound: SND_SCIENTIST_MOVE1 sounds/scientist_move1.ogg
+sound: SND_SCIENTIST_MOVE2 sounds/scientist_move2.ogg
+sound: SND_SCIENTIST_MOVE3 sounds/scientist_move3.ogg
+
+sound: SND_SCIENTIST_HURT1 sounds/scientist_hurt1.ogg
+sound: SND_SCIENTIST_HURT2 sounds/scientist_hurt2.ogg
+sound: SND_SCIENTIST_DIE1 sounds/scientist_die1.ogg
+sound: SND_SCIENTIST_DIE2 sounds/scientist_die2.ogg
+
+sound: SND_BAT_SELECT1 sounds/bat_select1.ogg
+sound: SND_BAT_SELECT2 sounds/bat_select2.ogg
+sound: SND_BAT_MOVE1 sounds/bat_move1.ogg
+sound: SND_BAT_MOVE2 sounds/bat_move2.ogg
+sound: SND_BAT_HURT1 sounds/bat_hurt1.ogg
+sound: SND_BAT_HURT2 sounds/bat_hurt2.ogg
+sound: SND_BAT_DIE1 sounds/bat_die1.ogg
+sound: SND_BAT_DIE2 sounds/bat_die2.ogg
+
+sound: SND_PHANTOM_SELECT1 sounds/phantom_select1.ogg
+sound: SND_PHANTOM_SELECT2 sounds/phantom_select1.ogg
+sound: SND_PHANTOM_MOVE1 sounds/phantom_move1.ogg
+sound: SND_PHANTOM_MOVE2 sounds/phantom_move2.ogg
+sound: SND_PHANTOM_HURT1 sounds/phantom_hurt1.ogg
+sound: SND_PHANTOM_DIE1 sounds/phantom_die1.ogg
+
+sound: SND_WOLF_SELECT1 sounds/wolf_select1.ogg
+sound: SND_WOLF_SELECT2 sounds/wolf_select2.ogg
+sound: SND_WOLF_MOVE1 sounds/wolf_move1.ogg
+sound: SND_WOLF_MOVE2 sounds/wolf_move2.ogg
+sound: SND_WOLF_HURT1 sounds/wolf_hurt1.ogg
+sound: SND_WOLF_HURT2 sounds/wolf_hurt2.ogg
+sound: SND_WOLF_DIE sounds/wolf_die.ogg
+sound: SND_WOLF_ATTACK1 sounds/wolf_attack1.ogg
+sound: SND_WOLF_ATTACK2 sounds/wolf_attack2.ogg
+
+sound: SND_BOSS_HURT1 sounds/boss_hurt1.ogg
+sound: SND_BOSS_HURT2 sounds/boss_hurt2.ogg
+sound: SND_BOSS_MOVE1 sounds/boss_move1.ogg
+sound: SND_BOSS_MOVE2 sounds/boss_move2.ogg
+sound: SND_BOSS_DIE sounds/boss_move2.ogg
+
+sound: SND_TURN_ALERT sounds/turn_alert.ogg
+
+sound: SND_SPAWN_ENEMY sounds/spawn_enemy.wav
+sound: SND_BOSS_TELEPORT sounds/boss_teleport.wav
+sound: SND_SPAWN sounds/spawn.ogg
+sound: SND_LOSE_GAME sounds/lose_game.wav
+sound: SND_SKULL_PICKUP sounds/skull_pickup.ogg
+sound: SND_WEAPON_PICKUP sounds/weapon_buy.wav
+sound: SND_INVALID sounds/invalid.wav
+
+
