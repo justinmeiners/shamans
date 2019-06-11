@@ -1,5 +1,7 @@
 # Shamans
 
+![shamans phantom](docs/img/phantom.png)
+
 ## Structure
 
 - `assets/` source files for game data (PSDs, blender, etc).
