@@ -9,7 +9,7 @@
 - `docs/` a postmordem about the project.
 - `source/engine/` portable game and engine code.
 - `source/platform/` API or platform-specific modules.
-- `support/` project files for Xcode or your IDE.
+- `platform/` platform specific code, assets, and project files.
 - `tools/` asset creation tools such as scripts for Blender.
 
 ## Game Data
