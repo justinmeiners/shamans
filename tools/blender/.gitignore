@@ -1,0 +1,11 @@
+# Generated files
+*.o
+*.pyc
+*.swp
+*.swo
+
+#Python modules
+MANIFEST
+dist/
+build/
+
