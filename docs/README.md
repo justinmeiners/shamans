@@ -1,15 +1,20 @@
 Shamans
-================
+========
 
-This article is a history of how I made Shamans and some of the lessons I learned in development. Shamans is currently in testing. The source code will be released on my Github, but the game data is not open source (similar to id tech). 
+This article is a history of the development of my game Shamans.
+I wrote it mostly between the years of 2015 and 2017, but never released it on the app store.
+The game is basically content and code complete besides some minor bugs, 
+but for various reasons I wasn't happy enough with it to release it, and my interests and
+time shifted to other things.
+The source code is available on my Github, but the game data is not open source (similar to id tech).
 
-### Engines vs Games
+### Engines vs Games (2017)
 
 Shamans is not my first 3D project. I have been involved in 3D graphics profesionally, and game development as a hobby for more than 5 years. But, in my attempts to make games in the past I always tried to craft the perfect game engine which I could then use to create a game. Each was a cleanly designed object framework, with enough generality to anticipate "any kind of game" I might want to make. Below are some screenshots from these early projects:
 
 ![galaxy forge](img/galaxy_forge_lg.jpg)
 
-![](img/galaxy_forge_sm.jpg)](img/galaxy_forge_lg.jpg)
+[![](img/galaxy_forge_sm.jpg)](img/galaxy_forge_lg.jpg)
 [![](img/old_character_sm.jpg)](img/old_character_lg.jpg)
 [![](img/world_c_sm.jpg)](img/world_c_lg.jpg)
 [![](img/space_ship_sm.jpg)](img/space_ship_lg.jpg)
@@ -18,7 +23,7 @@ This is a common problem for programmers who just want to tinker with tech. In s
     
  A good example of this is Quake. In the Quake engine has two kinds of objects, entities (dynamic moving objects) and the game world (static world scenery). The fact that the game world is static allows it to be rendered very quickly, with detailed lighting and effects, which the entities don't have. This choice works very well for an indoor, first person shooter, but would be hopeless for a game that required destructible enviornments. Without knowing the kind of game they wanted, they would never have been able to make that choice.
 
-After learning great technical lessons from making engines I realized the most effective way to make a game is to build the engine around the game, instead of the other way around. Shamnas is a result of this philosophy. Every line of code I wrote was to get to the next game feature. This choice was reinforced by choosing C rather than C++. C++ encourages you to write everything as a generic abstraction. C allows you to write polymorphic abstractions when you need, but the default is writing concrete code for specific problems.
+After learning great technical lessons from making engines I realized the most effective way to make a game is to build the engine around the game, instead of the other way around. Shamans is a result of this philosophy. Every line of code I wrote was to get to the next game feature. This choice was reinforced by choosing C rather than C++. C++ encourages you to write everything as a generic abstraction. C allows you to write polymorphic abstractions when you need, but the default is writing concrete code for specific problems.
 
 ### Early Game
 
@@ -32,7 +37,7 @@ The original concept for Shamans looked very different from the final product. T
 
 ![](img/10_7_15_lg.jpg)
 
-Unfortuntaly, creating detailed 3D worlds and scripting story events turned out to be a too large of project for a one person team. After experimenting with several enviornments, I made the decision to design a game which would require less art content. The turn-based design ended up fitting well with the technology already built, and allowed for a slow paced game that is better suited for tablet play, and was less demanding in terms of art.
+Unfortunatly, creating detailed 3D worlds and scripting story events turned out to be a too large of project for a one person team. After experimenting with several enviornments, I made the decision to design a game which would require less art content. The turn-based design ended up fitting well with the technology already built, and allowed for a slow paced game that is better suited for tablet play, and was less demanding in terms of art.
 
 ![](img/old_map1_lg.jpg)
 
@@ -52,7 +57,7 @@ Creating the art for the levels was still an enourmous amount of work for one pr
 
 ### Characters & Animation
 
-I started on the character models early in the game. Creating the characters was one of the most artistically challenging part of the game. Although a profesional artist will scoff at my work, I was able to exceed my own personal expectations, and get the quality and look I wanted. The game contains 5 unique characters, each with their own model, skeleton, texture and several animations. Each character was designed to have a similar "look and feel" so they cohere together in the same world.
+I started on the character models early in the game. Creating the characters was the most artistically challenging part of the game. Although a profesional artist will scoff at my work, I was able to exceed my own personal expectations, and get the quality and look I wanted. The game contains 5 unique characters, each with their own model, skeleton, texture and several animations. Each character was designed to have a similar "look and feel" so they cohere together in the same world.
 
 ![early 3d model game characters](img/early_characters_lg.jpg)
 ![witch 3d model](img/witch_modeling_lg.jpg)
@@ -103,7 +108,7 @@ The menu, overworld, and many UI images were created from offline renders from B
 
 ### Conclusion
 
-The amount of work that goes into creating a 3D video game is massive. I strongly encourage hobby developers to pick as focused of a project as possible. Shamans is only a simple tablet game, with a few hours of content and several characters. It doesn't come close to the size and quality of big budget titles and sticks to familiar gameplay. However, I am still excited to finally release my own game, even if it is a simple one. 
+The amount of work that goes into creating a 3D video game is massive. I strongly encourage hobby developers to pick as focused of a project as possible. Shamans is only a simple tablet game, with a few hours of content and several characters. It doesn't come close to the size and quality of big budget titles and sticks to familiar gameplay. However, I am still excited to finally have my own game, even if it is a simple one. 
 
 I hope you enjoy it! The final screenshots below are a timeline of the games progression from start to finish.
 
