@@ -1,14 +1,14 @@
-Shamans
-========
+Shamans (2017)
+===============
 
-This article is a history of the development of my game Shamans.
+Preface (12/19/19): This article is a history of the development of my game Shamans.
 I wrote it mostly between the years of 2015 and 2017, but never released it on the app store.
 The game is basically content and code complete besides some minor bugs, 
 but for various reasons I wasn't happy enough with it to release it, and my interests and
 time shifted to other things.
 The source code is available on my [Github](https://github.com/justinmeiners/shamans/), but the game data is not open source (similar to id tech).
 
-### Engines vs Games (2017)
+### Engines vs Games
 
 Shamans is not my first 3D project. I have been involved in 3D graphics profesionally, and game development as a hobby for more than 5 years. But, in my attempts to make games in the past I always tried to craft the perfect game engine which I could then use to create a game. Each was a cleanly designed object framework, with enough generality to anticipate "any kind of game" I might want to make. Below are some screenshots from these early projects:
 
