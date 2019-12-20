@@ -6,7 +6,7 @@ I wrote it mostly between the years of 2015 and 2017, but never released it on t
 The game is basically content and code complete besides some minor bugs, 
 but for various reasons I wasn't happy enough with it to release it, and my interests and
 time shifted to other things.
-The source code is available on my Github, but the game data is not open source (similar to id tech).
+The source code is available on my [Github](https://github.com/justinmeiners/shamans/), but the game data is not open source (similar to id tech).
 
 ### Engines vs Games (2017)
 
