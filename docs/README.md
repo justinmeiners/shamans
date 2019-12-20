@@ -72,9 +72,9 @@ The skeletal animation format began as a modified [MD5 file format](http://tfc.d
 
 Initially the skeletal animation process was written in C for the CPU, but after initial tests on the iPad, the process for transforming the skin by the skeleton performed very poorly. But, the inherently parallel problem was a perfect fit for the GPU. The skin transformation is now calculated in a vertex shader.
 
-[![](10_6_15_sm.jpg)](img/10_6_15_lg.jpg)
-[![](5_11_16_sm.jpg)](img/5_11_16_lg.jpg)
-[![](5_7_16_sm.jpg)](img/5_7_16_lg.jpg)
+[![](img/10_6_15_sm.jpg)](img/10_6_15_lg.jpg)
+[![](img/5_11_16_sm.jpg)](img/5_11_16_lg.jpg)
+[![](img/5_7_16_sm.jpg)](img/5_7_16_lg.jpg)
 
 ### Tuning & Optimization
 
@@ -112,13 +112,13 @@ The amount of work that goes into creating a 3D video game is massive. I strongl
 
 I hope you enjoy it! The final screenshots below are a timeline of the games progression from start to finish.
 
-[![](5_14_16_sm.jpg)](img/5_14_16_lg.jpg)
-[![](6_15_16_sm.jpg)](img/6_15_16_lg.jpg)
-[![](6_24_16_sm.jpg)](img/6_24_16_lg.jpg)
-[![](7_15_16_sm.jpg)](img/7_15_16_lg.jpg)
+[![](img/5_14_16_sm.jpg)](img/5_14_16_lg.jpg)
+[![](img/6_15_16_sm.jpg)](img/6_15_16_lg.jpg)
+[![](img/6_24_16_sm.jpg)](img/6_24_16_lg.jpg)
+[![](img/7_15_16_sm.jpg)](img/7_15_16_lg.jpg)
 
-[![](8_14_16_sm.jpg)](img/8_14_16_lg.jpg)
-[![](9_15_16_sm.jpg)](img/9_15_16_lg.jpg)
+[![](img/8_14_16_sm.jpg)](img/8_14_16_lg.jpg)
+[![](img/9_15_16_sm.jpg)](img/9_15_16_lg.jpg)
 
 If you have any feedback, requests for future platform, or questions about game development, please contact me.
 
