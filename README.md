@@ -15,6 +15,7 @@
 ## Game Data
 
 To run the game, you will need to acquire the game data.
+[Contact me](https://justinmeiners.github.io) if you are interested in discussing this further.
 
 # License
 
