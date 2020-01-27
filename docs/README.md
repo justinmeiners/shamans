@@ -8,6 +8,8 @@ but for various reasons I wasn't happy enough with it to release it, and my inte
 time shifted to other things.
 The source code is available on my [Github](https://github.com/justinmeiners/shamans/), but the game data is not open source (similar to id tech).
 
+![main screenshot](img/main_screenshot_lg.jpg)
+
 ### Engines vs Games
 
 Shamans is not my first 3D project. I have been involved in 3D graphics profesionally, and game development as a hobby for more than 5 years. But, in my attempts to make games in the past I always tried to craft the perfect game engine which I could then use to create a game. Each was a cleanly designed object framework, with enough generality to anticipate "any kind of game" I might want to make. Below are some screenshots from these early projects:
@@ -112,15 +114,15 @@ The amount of work that goes into creating a 3D video game is massive. I strongl
 
 I hope you enjoy it! The final screenshots below are a timeline of the games progression from start to finish.
 
-[![](img/5_14_16_sm.jpg)](img/5_14_16_lg.jpg)
-[![](img/6_15_16_sm.jpg)](img/6_15_16_lg.jpg)
-[![](img/6_24_16_sm.jpg)](img/6_24_16_lg.jpg)
-[![](img/7_15_16_sm.jpg)](img/7_15_16_lg.jpg)
 
-[![](img/8_14_16_sm.jpg)](img/8_14_16_lg.jpg)
-[![](img/9_15_16_sm.jpg)](img/9_15_16_lg.jpg)
+[![screenshot 1](img/5_14_16_sm.jpg)](img/5_14_16_lg.jpg)
+[![screenshot 2](img/7_15_16_sm.jpg)](img/7_15_16_lg.jpg)
+[![screenshot 3](img/9_15_16_sm.jpg)](img/9_15_16_lg.jpg)
+[![screenshot 4](img/lab_1_sm.jpg)](img/lab_1_lg.jpg)
+[![screenshot 4](img/observatory_1_sm.jpg)](img/observatory_1_lg.jpg)
 
-If you have any feedback, requests for future platform, or questions about game development, please contact me.
+
+If you have any feedback or questions about game development, please contact me.
 
 ## References
 
